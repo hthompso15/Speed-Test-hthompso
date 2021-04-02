@@ -42,13 +42,13 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    cout << "\nFirst 10 Numbers from Vector:" << endl;
+    cout << "First 10 Numbers from Vector:" << endl;
 
     for (int i = 0; i < 10; i++) {
         cout << cVec[i] << endl;
     }
 
-    cout << "\nLast 10 Numbers from Vector:" << endl;
+    cout << "Last 10 Numbers from Vector:" << endl;
 
     for (int i = 1; i < 11; i++) {
         int size = cVec.size();
