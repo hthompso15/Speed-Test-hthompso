@@ -42,9 +42,6 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    // TODO: Print the first and last ten numbers from the vector to the console
-
-
     cout << "\nFirst 10 Numbers from Vector:" << endl;
 
     for (int i = 0; i < 10; i++) {
