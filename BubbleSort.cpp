@@ -29,7 +29,6 @@ int main(int argc, char* argv[]) {
 
     cout << "Vector size: " << cVec.size() << endl;
 
-    // Fix Bubble sort the vector
     bool swapp = true;
         while(swapp) {
             swapp = false;
@@ -46,16 +45,17 @@ int main(int argc, char* argv[]) {
     // TODO: Print the first and last ten numbers from the vector to the console
 
 
-    cout << "First 10 Numbers from Vector:" << endl;
+    cout << "\nFirst 10 Numbers from Vector:" << endl;
 
     for (int i = 0; i < 10; i++) {
         cout << cVec[i] << endl;
     }
 
-    cout << "Last 10 Numbers from Vector:" << endl;
+    cout << "\nLast 10 Numbers from Vector:" << endl;
 
-    for (int i = cVec.size(); i == -10; i--) {
-        cout << cVec[i] << endl;
+    for (int i = 1; i < 11; i++) {
+        int size = cVec.size();
+        cout << cVec[size - i] << endl;
     }   
 
     return 0;
