@@ -30,22 +30,21 @@ int main(int argc, char* argv[]) {
     cout << "Vector size: " << cVec.size() << endl;
 
     // Fix Bubble sort the vector
-    bool swapped = true;
-    int maxIndex = cVec.size()-1;
-    while (swapped) {
-        swapped = false;
-        for(int i; i < maxIndex; i++) {
-            if (cVec[i+1] < cVec[i]) {
-                int temp = cVec[i];
-                cVec[i] = cVec[i+1];
-                cVec[i+1] = temp;
-                swapped = true;
+    bool swapp = true;
+        while(swapp) {
+            swapp = false;
+            for (int i = 0; i < cVec.size()-1; i++) {
+                if (cVec[i] > cVec[i+1] ){
+                    cVec[i] += cVec[i+1];
+                    cVec[i+1] = cVec[i] - cVec[i+1];
+                    cVec[i] -= cVec[i+1];
+                    swapp = true;
             }
         }
-        maxIndex -= 1;
     }
 
     // TODO: Print the first and last ten numbers from the vector to the console
+
 
     cout << "First 10 Numbers from Vector:" << endl;
 
